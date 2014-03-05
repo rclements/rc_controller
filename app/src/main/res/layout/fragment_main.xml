@@ -6,7 +6,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.app.MainActivity$PlaceholderFragment">
+    android:screenOrientation="landscape"
+    tools:context="com.isotope11.rccontroller.MainActivity$PlaceholderFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Erlang onto FS"
+        android:id="@+id/copyButton"
+        android:layout_marginTop="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch epmd + erlang node"
+        android:id="@+id/launchErlangButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
     <VerticalSeekBar
@@ -58,4 +76,5 @@
         android:id="@+id/rightValue"
         android:layout_below="@+id/rightLabel"
         android:layout_toLeftOf="@+id/rightStick"/>
+
 </RelativeLayout>
